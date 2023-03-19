@@ -16,3 +16,35 @@ img {
   display: block;
   max-width: 100%;
 }
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+button {
+  border-radius: 50%;
+  padding: 10px 20px;
+  font-size: 20px;
+  margin: 0 10px;
+}
+button[data-start],
+button[data-stop] {
+  opacity: 0.8;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+button[data-start] {
+  background-color: green;
+  border-color: green;
+}
+
+button[data-stop] {
+  background-color: red;
+  border-color: red;
+}
+
